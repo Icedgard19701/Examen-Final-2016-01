@@ -5,8 +5,12 @@ for i in range (0,a):
     x = int(input("Ingrese numero: "))
     datos.append(x)
 
-datos.reverse()
-reversed(datos)
-
+def ordenar_max(datos):
+    for i in range(len(datos)):
+        for j in range(len(datos)):
+          if datos[i] > datos[j]:
+            tmp = datos[i]
+            datos[i] = datos[j]
+            datos[j] = tmp
 
 print(datos)
