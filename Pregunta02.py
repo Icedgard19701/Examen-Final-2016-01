@@ -1,16 +1,15 @@
 a = int(input("Cantidad de numeros a evaluar: "))
 datos = []
+numeros = []
 
 for i in range (0,a):
     x = int(input("Ingrese numero: "))
     datos.append(x)
 
-def ordenar_max(datos):
-    for i in range(len(datos)):
-        for j in range(len(datos)):
-          if datos[i] > datos[j]:
-            tmp = datos[i]
-            datos[i] = datos[j]
-            datos[j] = tmp
+for i in range (0,a-1):
+    if datos[i+1] > datos[i]:
+        y = datos[i+1]
+        numeros.append(y)
 
-print(datos)
+
+print(numeros)
