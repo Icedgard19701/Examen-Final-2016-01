@@ -5,6 +5,8 @@ numeros = []
 for i in range (0,a):
     x = int(input("Ingrese numero: "))
     datos.append(x)
+ 
+datos.append(0)
 
 for i in range (0,a-1):
     if datos[i+1] > datos[i]:
